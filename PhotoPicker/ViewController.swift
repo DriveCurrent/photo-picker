@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var previewView: UIView!
     @IBOutlet weak var capturedImage: UIImageView!
-    @IBOutlet weak var takePhotoButton: UIButton!
     
     var captureSession: AVCaptureSession?
     var stillImageOutput: AVCaptureStillImageOutput?
@@ -59,7 +58,7 @@ class ViewController: UIViewController {
         previewLayer!.frame = previewView.bounds
     }
 
-    @IBAction func didPressTakePhoto(sender: AnyObject) {
+    @IBAction func didPressTakePhoto(sender: UIButton) {
         
         if let videoConnection = stillImageOutput!.connectionWithMediaType(AVMediaTypeVideo) {
             videoConnection.videoOrientation = AVCaptureVideoOrientation.Portrait
