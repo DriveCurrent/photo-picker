@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -34,7 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressTakePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k3A-Lk-pPn"/>
+                                    <action selector="didPressTakePhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WD2-u3-xGc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,7 +57,6 @@
                     <connections>
                         <outlet property="capturedImage" destination="auY-gV-MrQ" id="P7B-FJ-zjs"/>
                         <outlet property="previewView" destination="epI-cg-NEv" id="aVZ-TC-13m"/>
-                        <outlet property="takePhotoButton" destination="9iD-u0-eCd" id="GOq-D2-qHN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
